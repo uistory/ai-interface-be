@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 
-export class PromptDto {
+export class GenerateRecipeRequestDto {
   @ApiProperty()
   ingredients: string[];
 }
