@@ -8,7 +8,9 @@ export class TextAiInterfaceController {
 
   @Post()
   async create(@Body() prompt: PromptDto) {
-    const res = await this.textAiInterfaceService.getAiResponse(prompt.text);
+    const res = await this.textAiInterfaceService.getAiResponse(
+      prompt.ingredients.join(),
+    );
     return res;
   }
 }

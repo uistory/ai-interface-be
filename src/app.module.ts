@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { TextAiInterfaceModule } from './text-ai-interface/text-ai-interface.module';
+import { TextAiInterfaceModule } from 'src/modules/text-ai-interface/text-ai-interface.module';
 
 @Module({
   imports: [TextAiInterfaceModule],
